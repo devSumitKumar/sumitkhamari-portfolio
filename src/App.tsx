@@ -1,14 +1,17 @@
 import React from 'react';
-
+import { Navigation, About, Skills, Timeline, Resume,Footer } from './components';
 
 function App() {
 
   return (
-    <>
-    <div>
-      <h1>test</h1></div>
-    
-    </>
+     <div className="min-h-screen bg-white dark:bg-gray-900 transition-colors">
+      <Navigation />
+      <About/>
+      <Skills/>
+      <Timeline/>
+      <Resume/>
+      <Footer/>
+    </div>
   )
 }
 
