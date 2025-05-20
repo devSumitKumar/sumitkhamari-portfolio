@@ -1,5 +1,5 @@
 import React from 'react';
-import { Github, Linkedin, Mail } from 'lucide-react';
+import { Github, Linkedin, Mail, FolderGit } from 'lucide-react';
 import { Avatar, AvatarFallback, AvatarImage } from "../../commmon/avatar";
 import { URL_CONST } from '../../../helper';
 
@@ -20,11 +20,11 @@ export function About() {
               I build things for the Mobile & Web.
             </h2>
             <p className="text-muted-foreground mt-6 text-lg animate-fade-in-delay-4 opacity-0">
-            With 9+ years of experience in Application Development (4 - iOS Native, 5 - React) React development, I’ve built and deployed mobile applications across e-commerce, banking, and startup ecosystems. My expertise lies in developing cross-platform apps that are fast, scalable, and user-friendly while ensuring top-notch performance and security.
+              With 9+ years of experience in Application Development (4 - iOS Native, 5 - React) React development, I’ve built and deployed mobile applications across e-commerce, banking, and startup ecosystems. My expertise lies in developing cross-platform apps that are fast, scalable, and user-friendly while ensuring top-notch performance and security.
             </p>
             <div className="mt-8 flex flex-wrap gap-4 animate-fade-in-delay-4 opacity-0">
-            <a
-                href={URL_CONST.GITHUB_URL} 
+              <a
+                href={URL_CONST.GITHUB_URL}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-2 rounded-full bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors"
@@ -45,7 +45,15 @@ export function About() {
               >
                 <Mail className="w-6 h-6 text-gray-700 dark:text-gray-300" />
               </a>
-             
+
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href={URL_CONST.REPO_PATH}
+                className="p-2 rounded-full bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors"
+              >
+                <FolderGit className="w-6 h-6 text-gray-700 dark:text-gray-300" />
+              </a>
             </div>
           </div>
           <div className="order-1 md:order-2 animate-fade-in-delay-2 opacity-0">
